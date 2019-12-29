@@ -15,16 +15,7 @@ import * as env from 'env-var'
 import App from './App'
 import { FirebaseProvider } from './utilities/firebase'
 import theme from './utilities/theme'
-
-const firebaseConfig = {
-  apiKey: 'AIzaSyBQkLQ1DJEtDczE179QNc7fF1UM6t0piqY',
-  authDomain: 'repsp123.firebaseapp.com',
-  databaseURL: 'https://repsp123.firebaseio.com',
-  projectId: 'repsp123',
-  storageBucket: 'repsp123.appspot.com',
-  messagingSenderId: '1081890506539',
-  appId: '1:1081890506539:web:61606bc159584f95',
-}
+import firebaseConfig from './.firebaseConfig'
 
 firebase.initializeApp(firebaseConfig)
 firebase.firestore().enablePersistence()
